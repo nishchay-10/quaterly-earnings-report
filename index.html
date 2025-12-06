@@ -17,7 +17,6 @@
 
         <section>
           <h2>Quarterly Earnings</h2>
-          <p>Presentation by:</p>
           <p>24f2003882@ds.study.iitm.ac.in</p>
           <small>
             <a href="mailto:24f2003882@ds.study.iitm.ac.in">24f2003882@ds.study.iitm.ac.in</a>
@@ -34,31 +33,28 @@
 
         <section>
           <h3>Growth Plan</h3>
-          <p class="fragment">Phase 1: Expansion</p>
-          <p class="fragment">Phase 2: Automation</p>
+          <p class="fragment">1. Expand</p>
+          <p class="fragment">2. Automate</p>
         </section>
 
         <section>
-          <h3>Financial Formula</h3>
-          \[ P = \frac{r(PV)}{1-(1+r)^{-n}} \]
+          <h3>Math</h3>
+          \[ E = mc^2 \]
         </section>
 
         <section>
-          <h3>Python Module</h3>
-          <pre><code class="hljs python" data-trim data-line-numbers>
-def calculate_roi(investment, return_val):
-    """
-    Calculate Return on Investment
-    """
-    net = return_val - investment
-    return (net / investment) * 100
+          <h3>Code Sample</h3>
+          <pre><code data-trim data-noescape>
+def hello_world():
+    print("Hello, World!")
+    return True
           </code></pre>
         </section>
 
         <section>
-            <h2>Thank You</h2>
+            <h2>End</h2>
             <aside class="notes">
-                Remind the board about the vote next Tuesday.
+                Speaker notes included.
             </aside>
         </section>
 
@@ -71,6 +67,7 @@ def calculate_roi(investment, return_val):
     <script src="https://unpkg.com/reveal.js@4.6.0/plugin/math/math.js"></script>
     <script src="https://unpkg.com/reveal.js@4.6.0/plugin/notes/notes.js"></script>
     <script>
+      // Initialize with all required plugins
       Reveal.initialize({
         hash: true,
         plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
