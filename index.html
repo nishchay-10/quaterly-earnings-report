@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Quarterly Earnings</title>
+    <title>Quarterly Report</title>
     <meta name="author" content="24f2003882@ds.study.iitm.ac.in">
     
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.6.0/dist/reveal.css">
@@ -16,46 +16,49 @@
       <div class="slides">
 
         <section>
-          <h2>Quarterly Earnings Report</h2>
-          <p>Technical Consultant Presentation</p>
+          <h2>Quarterly Earnings</h2>
+          <p>Presentation by:</p>
           <p>24f2003882@ds.study.iitm.ac.in</p>
           <small>
-             <a href="mailto:24f2003882@ds.study.iitm.ac.in">24f2003882@ds.study.iitm.ac.in</a>
+            <a href="mailto:24f2003882@ds.study.iitm.ac.in">24f2003882@ds.study.iitm.ac.in</a>
           </small>
         </section>
 
         <section data-markdown>
           <textarea data-template>
             ## Executive Summary
-            
-            * Revenue increased by **15%**
-            * Costs reduced
+            * Revenue: **+15%**
+            * Costs: **-5%**
           </textarea>
         </section>
 
         <section>
-          <h3>Key Growth</h3>
-          <p class="fragment">1. Cloud Infrastructure</p>
-          <p class="fragment">2. AI Implementation</p>
+          <h3>Growth Plan</h3>
+          <p class="fragment">Phase 1: Expansion</p>
+          <p class="fragment">Phase 2: Automation</p>
         </section>
 
         <section>
           <h3>Financial Formula</h3>
-          \[ A = P(1+r)^t \]
+          \[ P = \frac{r(PV)}{1-(1+r)^{-n}} \]
         </section>
 
         <section>
-          <h3>Algorithm</h3>
-          <pre><code class="hljs python">
-def calculate_profit(revenue, cost):
-    return revenue - cost
+          <h3>Python Module</h3>
+          <pre><code class="hljs python" data-trim data-line-numbers>
+def calculate_roi(investment, return_val):
+    """
+    Calculate Return on Investment
+    """
+    net = return_val - investment
+    return (net / investment) * 100
           </code></pre>
         </section>
 
         <section>
-            <h2>Q & A</h2>
+            <h2>Thank You</h2>
             <aside class="notes">
-                Discuss next steps with the board.
+                Remind the board about the vote next Tuesday.
             </aside>
         </section>
 
@@ -69,6 +72,7 @@ def calculate_profit(revenue, cost):
     <script src="https://unpkg.com/reveal.js@4.6.0/plugin/notes/notes.js"></script>
     <script>
       Reveal.initialize({
+        hash: true,
         plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
       });
     </script>
